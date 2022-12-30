@@ -1,0 +1,6 @@
+requests
+asyncio
+playwright
+pillow
+cryptography
+nest_asyncio
