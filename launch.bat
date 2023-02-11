@@ -1,2 +1,5 @@
+FOR /F "tokens=* USEBACKQ" %%F IN (`%windir%\py.exe -3.10 -c "import sys; print(sys.executable[:-10])"`) DO (
+SET pythonPath=%%F
+)
 cd "%~dp0"
-python "%~dp0InstaTool.py"
+"%pythonPath%python.exe" "%~dp0InstaTool.py"
